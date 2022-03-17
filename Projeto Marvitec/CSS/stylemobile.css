@@ -1,0 +1,416 @@
+:root {
+  --vermelho: #ff0105;
+}
+
+
+
+
+/*================Menus=======================*/
+.menu-pc{
+  display: none;
+}
+
+.menu-mobile {
+position: absolute;
+width: 70vw;
+z-index: 1;
+height:100%;
+background-color: #2b2b2b;
+top: 0;
+right: 0;
+
+}
+
+
+[data-smenu]{
+opacity: 0;
+transition: .4s
+}
+[data-smenu="menudireita"]{
+transform: translate3d(0px,300px,0);
+}
+[data-smenu].animate{
+
+opacity: 1;
+transform: translate3d(0,0,0);
+
+}
+
+#btn-close{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;top: 20px;
+  font-size: 1.5em;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-mobile #logo-menu{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#logo-menu img{
+  width: 150px;
+  padding: 20px;
+}
+#grid-menu-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column  ;
+  align-items: center;
+
+}
+#grid-menu-mobile li{
+  padding: 3%;
+}
+#grid-menu-mobile li a{
+ color: white;
+ font-size: 1.2rem;
+}
+#menus{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content:space-between;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+#hamburguer img {
+  width: 40px;
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 140px;
+  margin-left: 10px;
+}
+
+
+/* ========================================== */
+
+.container-rodovia {
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../Assets/image\ 1.jpg);
+}
+.txt-btn h1 {
+  display: none;
+}
+.container-rodovia .botoes {
+  display: none;
+}
+
+.container-rodovia #btn-explorar {
+  display: none;
+}
+
+/*=========conteiner-infra==========*/
+
+.container-infra {
+  background-color: black;
+  text-align: center;
+  color: white;
+
+}
+
+article {
+  padding: 20px;
+}
+
+.container-infra h1{
+  font-size: 1rem;
+  margin-bottom: 40px;
+
+}
+
+
+#infra-logo {
+  display: none;
+}
+
+#marv {
+  color: rgb(255, 0, 0);
+  display: inline;
+}
+#traço {
+  color: white;
+}
+#botao-saiba {
+  background-color: red;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+margin: 40px;
+
+  padding: 15px 60px 15px 60px;
+}
+
+/*===========pq nos escolher===============*/
+
+.container-escolher {
+  background-color: #2b2b2b;
+}
+
+#pqe {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+
+.caixas{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.box {
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: var(--vermelho);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.box p {
+  width: 18rem;
+  height: 8rem;
+  text-align: center;
+  padding-top: 30px;
+}
+/*=======Videos===========*/
+.video2,
+.video3,
+.video4,
+.video5,
+.video6 {
+  display: none;
+}
+#btn-you {
+  display: none;
+}
+#container-video-p
+{
+display: none;
+}
+#btn-you {
+  display: none;
+}
+
+.video img {
+  padding: 10px;
+  width: 100%;
+
+}
+.container-videos{
+  background-color: white;
+}
+.container-videos h1{
+text-align: center;
+margin: 30px;
+text-transform: uppercase;
+font-size: 1.5rem;
+
+}
+.check {
+  text-align: center;
+  margin: 5%;
+}
+
+
+
+/*============CONTAINER PRODUTOS============*/
+.container-produtos{
+  background-color: rgb(0, 0, 0);
+}
+
+.container-produtos img{
+width: 100px;
+}
+
+#logo-produtos{
+text-align: center;
+padding-top: 20px;
+}
+.container-produtos h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.grid-produtos{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+ 
+}
+
+.grid-produtos .produto1,.produto2,.produto3,.produto4{
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 10px;
+}
+.grid-produtos .produto1 h2,.produto2 h2,.produto3 h2,.produto4 h2{
+  font-size:1rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(255, 0, 0, 0.548);
+}
+
+
+.produto1{
+background-image: url(../Assets/produto1.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.produto2{
+  background-image: url(../Assets/produto2.png);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.produto3{
+  background-image: url(../Assets/produto3.png);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.produto4{
+  background-image: url(../Assets/produto4.png);
+  background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.botaovejamais{
+display: flex;
+justify-content: center;
+padding-bottom: 20px;
+}
+#btn-veja {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px;
+margin: 10px 0 10px 0;
+}
+
+/*========PRODUTOS EM DESTAQUE==========*/
+
+.container-destaque h1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.container-destaque img {
+  width: 400px;
+}
+.flex-destaque {
+  display: flex;
+  overflow-x: scroll;
+}
+.flex-btn {
+  display: flex;
+  justify-content: center;
+}
+#btn-conheça {
+
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/*=======BOX TRANSPARENTE========*/
+
+.box-transparente {
+  display: none;
+}
+
+/*===========FOOTER===============*/
+
+#tel > #tel-cont{
+  margin: 2%;
+  background-color: #ff0105;
+  border-radius: 3px;
+  padding: 1%;
+ }
+ .container-contato{
+
+   background-color:black;
+   color: white;
+   display: flex;
+   flex-direction:column;
+   text-align: center;
+ }
+ .container-contato img{
+   width: 150px;
+ }
+ .container-contato h1{
+   font-size: 1.3rem;
+   margin: 20px;
+ }
+ .container-contato figure{
+ margin: 20px;
+ }
+ #Endereço{
+   margin:0 50px 0 50px ;
+ }
+ .flex-social a > img{
+   width:40px ;
+   margin-left:10px ;
+ 
+ }
+
+ .flex-social{
+   margin: 20px 0 80px 0;
+ }
+
+/*========RODAPE==========*/
+
+.rodapé {
+  text-align: center;
+  padding: 25px;
+  color: white;
+  background-color: #2b2b2b;
+}
+.rodapé p{
+  font-size: 0.8rem;
+margin-bottom: 20px;
+}

@@ -1,0 +1,9 @@
+@import url(../CSS/stylemobile.css) (max-width:600px);
+@import url(../CSS/styletablet.css) (min-width:600px) and (max-width:900px);
+@import url(../CSS/stylepc.css)     (min-width:900px);
+
+
+*{margin: 0;padding: 0; list-style: none; text-decoration: none; box-sizing: border-box; }
+/* reset css */
+
+

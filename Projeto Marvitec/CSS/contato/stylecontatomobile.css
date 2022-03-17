@@ -1,0 +1,213 @@
+:root {
+  --vermelho: #ff0105;
+}
+
+
+
+
+/*================Menus=======================*/
+.menu-pc{
+  display: none;
+}
+
+.menu-mobile{
+  display: none;
+position: absolute;
+width: 90vw;
+height:350px;
+background-color: #2b2b2b;
+top: 50px;
+right: 15px;
+}
+.menu-mobile #logo-menu{
+display: flex;
+justify-content: center;
+}
+#logo-menu img{
+  width: 150px;
+  padding: 20px;
+}
+#grid-menu-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column  ;
+  align-items: center;
+
+}
+#grid-menu-mobile li{
+  padding: 3%;
+}
+#grid-menu-mobile li a{
+ color: white;
+ font-size: 1.2rem;
+}
+#menus{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content:space-between;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+#hamburguer img {
+  width: 40px;
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 140px;
+  margin-left: 10px;
+}
+/* ==================Container Rodovia=================== */
+
+
+.flex-itens{
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.flex-itens h1{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-itens input{
+    padding: 4% 2%;
+
+    margin: 3%;
+    background-color: rgba(37, 37, 37, 0.637);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.inputs label{
+  padding-left: 15px;
+}
+
+.flex-itens select{
+  padding: 4% 2%;
+  background-color: rgba(37, 37, 37, 0.637);
+    margin: 3%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+#text{
+    width: 95%;
+    height: 150px;
+    resize: none;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(37, 37, 37, 0.637);
+
+}
+
+#btn-enviar{
+    
+    padding: 10px 40px 10px 40px;
+    margin-right: 20px;
+    border: none;
+    text-align: center;
+    background-color: red;
+    color: white;
+     font-size: 1.1rem;
+  border: none;
+
+}
+
+.flex-bt{
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+iframe{
+  width:95%;
+  height: 375px;
+}
+
+.cap{
+width: 150px;
+height: 50px;
+background-color: grey;
+margin: 10px 0 10px 0;
+}
+
+
+/*===================Mapa====================*/
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*===========FOOTER===============*/
+
+#tel > #tel-cont{
+  margin: 2%;
+  background-color: #ff0105;
+  border-radius: 3px;
+  padding: 1%;
+ }
+ .container-contato{
+
+   background-color:black;
+   color: white;
+   display: flex;
+   flex-direction:column;
+   text-align: center;
+ }
+ .container-contato img{
+   width: 150px;
+ }
+ .container-contato h1{
+   font-size: 1.3rem;
+   margin: 20px;
+ }
+ .container-contato figure{
+ margin: 20px;
+ }
+ #Endereço{
+   margin:0 50px 0 50px ;
+ }
+ .flex-social a > img{
+   width:40px ;
+   margin-left:10px ;
+ 
+ }
+
+ .flex-social{
+   margin: 20px 0 80px 0;
+ }
+
+/*========RODAPE==========*/
+
+.rodapé {
+  text-align: center;
+  padding: 25px;
+  color: white;
+  background-color: #2b2b2b;
+}
+.rodapé p{
+  font-size: 0.8rem;
+margin-bottom: 20px;
+}

@@ -1,0 +1,446 @@
+<!-- =============================TAREFAS=================================================
+
+AUGUSTO DESENVOLVER O MOBILE( não sei desenvolver ;_; vai aprender caraio)
+
+CESAR A PARTE DO TABLET 
+
+BIASI A PARTE DO PC 
+
+INTEGRAR OS METAS PARA AS PESQUISAS DO GOOGLE AO FIM DO PROJETO 
+
+PESQUISAR FORMAS DE TRADUZIR TODO O CONTEUDO DA PAGINA PRA OUTRA LINGUA,VISANDO 
+CLIENTES DE OUTROS LUGARES (EX: https://developers.google.com/fonts/docs/material_icons)
+ELE TEM O BOTAO PARA ESCOLHA DE LINGUAGEM 
+
+BUSCAR FORMAS DE DIMINUIR O CÓDIGO E DEIXA-LO MAIS LIMPO
+
+
+======================================AVISOS=============================================
+
+Os icones do container-escolher estao presentes na classe .material-icons , ou seja, 
+voce edita todos de uma vez.
+
+.box .material-icons{
+    font-size: 40px;
+
+    assim que edita o tamanho, cor e tals
+}
+
+só altere o html caso seja algo especifico e que nao ira afetar nas outras telas
+
+
+LEMBRAR DE FAZER OS MENUS
+
+LEMBRAR DE MUDAR O TAMANHO DOS ITENS DO PRIMEIRO CONTAINER
+========================================================================================= -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="shortcut icon" href="https://www.marvitec.com.br/imagens/favicon.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Marvitec</title>
+
+</head>
+
+<body>
+  <header>
+
+    <nav id="menus">
+
+      <figure class="logo">
+        <img src="../Assets/logo.png" alt="" />
+      </figure>
+
+      <div class="menu-pc">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Empresa</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Diretrizes</a></li>
+          <li><a href="#">Informações</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <figure id="hamburguer">
+        <img src="../Assets/hamb.png" alt="" />
+      </figure>
+
+      <div class="menu-mobile" data-smenu="menudireita" >
+        <ul>
+          <li id="logo-menu"><img src="../Assets/logo.png" alt="" /> <button id="btn-close">X</button></li>
+          <div id="grid-menu-mobile">
+           
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Diretrizes</a></li>
+            <li><a href="#">Informações</a></li>
+            <li><a href="#">Contato</a></li>
+          </div>
+        </ul>
+
+
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="container-rodovia">
+
+      <div class="flex-itens">
+
+        <div class="txt-btn">
+
+          <h1>SEGURANÇA <br> EM PRIMEIRO <br> LUGAR!</h1>
+          <input id="btn-explorar" type="button" value="Explorar">
+
+        </div> <!-- txt-btn FECHAMENTO -->
+
+        <div class="botoes">
+
+          <input type="button" value="Rodovia"><a href=""></a></input>
+          <input type="button" value="Estruturas metalicas"><a href=""></a></input>
+          <input type="button" value="Grades"><a href=""></a></input>
+
+        </div> <!-- botoes FECHAMENTO -->
+      </div><!-- flex itens fechamento -->
+    </section> <!-- container rodovia fechamento -->
+
+
+    <section class="container-infra">
+
+      <article class="infra-conteudo" data-anime="rigth">
+
+        <figure id="infra-logo">
+          <img src="../Assets/logo.png" alt="" />
+        </figure>
+
+        <h1>
+          <div id="marv">Marvitec <span id="traço">-</span> </div>Infraestrutura de Segurança e<br> Sinalização Viária
+        </h1>
+
+        <p>
+          A S.R. Trade / Marvitec, criada em 1994,
+          é uma divisão do Grupo Home Line para
+          atender os setores de: Infraestrutura
+          de Segurança e Sinalização Viária /
+          Infraestrutura Elétrica
+          / Estruturas Metálicas para Construção
+          / Prestação de Serviços.
+        </p>
+        <div class="btn-class">
+          <input id="botao-saiba" type="button" value="Saiba Mais">
+        </div>
+      </article>
+
+    </section> <!-- fechamento section container-infra -->
+
+    <section class="container-escolher">
+
+      <h1 id="pqe"> PORQUE NOS ESCOLHER</h1>
+
+      <div class="caixas">
+
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box">
+            <span class="material-icons">
+              phone
+            </span>
+          </div>
+          <!--LOGO FECHAMENTO-->
+          <h1>ATENDIMENTO</h1>
+
+          <p> Sempre o melhor e mais profissional
+            atendimento
+            é dado ao cliente com respeito,
+            profissionalismo e prontidão.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO 1-->
+
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box"> <span class="material-icons">
+              trending_up
+            </span></div>
+          <!--LOGO FECHAMENTO-->
+          <h1>QUALIDADE</h1>
+
+          <p id="txt-qualidade"> Todos produtos MARVITEC seguem padrão máximo de qualidade conforme Normas: Brasileira
+            ABNT, Europeia EN 1317, Americana NCHRP 350.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO2-->
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box">
+
+            <span class="material-icons">
+              person_add_alt_1
+            </span>
+
+          </div>
+          <!--LOGO FECHAMENTO-->
+          <h1>CONFIANÇA</h1>
+
+
+
+
+          
+          <p> O essencial é que todos clientes MARVITEC confiam e acreditam muito em nosso trabalho e produtos.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO3-->
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box"> <span class="material-icons">
+              bolt
+            </span></div>
+          <!--LOGO FECHAMENTO-->
+          <h1>PRONTIDÃO</h1>
+
+          <p> Nossos colaboradores estarão sempre prontos e preparados para atender à sua necessidade, independentemente
+            da situação.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO4-->
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box"> <span class="material-icons">
+              done
+            </span></div>
+          <!--LOGO FECHAMENTO-->
+          <h1>COMPROMISSO</h1>
+
+          <p>Os resultados surgem quando há um trabalho sério e concreto nos materiais. O que prometemos para nosso
+            cliente é cumprido à risca.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO5-->
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box"> <span class="material-icons">
+              favorite
+            </span></div>
+          <!--LOGO FECHAMENTO-->
+          <h1>TRANSPARÊNCIA</h1>
+
+          <p> Esclarecemos sempre todas dúvidas, seja de projeto, produto, aplicação, logísticos, financeiros, para
+            conforto de nosso cliente.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO6-->
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box"> <span class="material-icons">
+              event_available
+            </span></div>
+          <!--LOGO FECHAMENTO-->
+          <h1>PRAZOS</h1>
+
+          <p> Trabalhamos para atender nossos clientes no menor prazo possível, garantindo o fornecimento nas
+            quantidades pactuadas.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO7-->
+        <div class="box" data-anime="rigth">
+
+          <div class="logo-box"> <span class="material-icons">
+              question_answer
+            </span></div>
+          <!--LOGO FECHAMENTO-->
+          <h1>DISPOSIÇÃO</h1>
+
+          <p> Estamos dispostos a encontrar a melhor solução custo / benefício para as necessidades pontuais em cada
+            situação.
+          </p>
+        </div>
+        <!--BOX FECHAMENTO8-->
+
+      </div> <!-- FECHAMENTO BOX -->
+
+
+
+    </section> <!-- FECHAMENTO CONTAINER-ESCOLHER-->
+
+    <section class="container-videos">
+
+      <h1> Videos em <span>destaque</span></h1>
+      <p id="container-video-p">A mais completa linha de linha de producao para segurança Viária</p>
+
+      <div class="flex-videos" data-anime="rigth">
+
+         <div class="video"> <img src="../Assets/poster.jpg" alt=""></div>
+        <div class="video2"><img src="../Assets/poster.jpg" alt=""></div>
+        <div class="video3"><img src="../Assets/poster.jpg" alt=""></div>
+        <div class="video4"><img src="../Assets/poster.jpg" alt=""></div>
+        <div class="video5"><img src="../Assets/poster.jpg" alt=""></div>
+        <div class="video6"><img src="../Assets/poster.jpg" alt=""></div>
+      </div>
+      <!--FECHAMENTO FLEX-VIDEOS-->
+
+      <div id="btn-you"> <button><img src="../Assets/you.png">
+          <h1>Marvitec Rodovias</h1>
+        </button> </div>
+
+      <div class="check">
+        <input type="radio" name="check1" id="">
+        <input type="radio" name="check1" id="">
+        <input type="radio" name="check1" id="">
+        <input type="radio" name="check1" id="">
+        <input type="radio" name="check1" id="">
+        <input type="radio" name="check1" id="">
+
+      </div>
+      <!--FECHAMENTO CHECK-->
+
+
+    </section>
+    <!--FECHAMENTO CONTAINER-VIDEOS-->
+
+
+
+    <section class="container-produtos">
+
+      <figure id="logo-produtos"> <img src="../Assets/logo.png" alt="" /></figure>
+
+      <h1>Nosso Produtos</h1>
+      <div class="grid-produtos">
+
+        <div class="produto1" data-anime="rigth">
+          <h2 id="teste">Gradil</h2>
+        </div>
+        <div class="produto2" data-anime="rigth">
+          <h2>Atenuadores de impacto</h2>
+        </div>
+        <div class="produto3" data-anime="rigth">
+          <h2>Defensas
+        </div>
+        <div class="produto4" data-anime="rigth">
+          <h2>Terminais Absorvedores de Energia</h2>
+        </div>
+
+
+      </div>
+      <!--GRID FECHAMENTO-->
+
+      <div class="botaovejamais">
+        <input id="btn-veja" type="button" value="Veja Mais">
+      </div>
+
+    </section>
+    <!--FECHAMENTO CONTAINER-PRODUTOS-->
+
+    <section class="container-destaque">
+
+      <h1> Produtos em Destaque</h1>
+      <div class="flex-destaque">
+
+        <input type="button" value="⇠">
+
+        <div class="box1" data-anime="rigth"><img src="../Assets/destaque1.png" alt="">
+          <div class="box-red"> Produto 1 - Lorem ipsum</div>
+        </div>
+
+        <div class="box1" data-anime="rigth"><img src="../Assets/destaque1.png" alt="">
+          <div class="box-red"> Produto 2 - Lorem ipsum</div>
+        </div>
+        <div class="box1" data-anime="rigth"><img src="../Assets/destaque1.png" alt="">
+
+          <div class="box-red"> Produto 3 - Lorem ipsum</div>
+        </div>
+        <div class="box1" data-anime="rigth"><img src="../Assets/destaque1.png" alt="">
+          <div class="box-red"> Produto 4 - Lorem ipsum</div>
+        </div>
+
+
+
+        <input type="button" value="⇢">
+
+      </div>
+      <!--FECHAMENTO FLEX DESTAQUE-->
+      <div class="flex-btn">
+        <input id="btn-conheça" type="button" value="Conheça!">
+      </div>
+    </section>
+    <!--FECHAMENTO CONTAINER DESTAQUE-->
+
+    <section class="container-fundopc">
+      <!-- tera o background paisagem -->
+
+      <div class="box-transparente">
+        <!-- LEMBRAR DE TROCAR A ID PARA A CERTA -->
+        <figure id="logo-produtos"> <img src="../Assets/logo.png" alt="" /></figure>
+
+        <h1>Infraestrutura de Segurança e Sinalização Viária</h1>
+      </div>
+      <!--box transparente-->
+
+    </section>
+
+
+    <section class="container-contato">
+
+
+      <figure id="logo-produtos2"> <img src="../Assets/logo.png" alt="" /></figure>
+
+      <div id="title">
+
+        <h1>Marvitec - Infraestrutura de Segurança e Sinalização Viária</h1>
+      </div>
+      <div id="Endereço" data-anime="rigth">
+        <p>Av. Guinle , 1.211/1.241 - Cumbica
+          Guarulhos-SP - CEP: 07221-070</p>
+      </div>
+      <div class="icon-tel">
+      </div>
+      <div id="tel">
+        <span id="tel-cont" class="material-icons" data-anime="rigth">
+          phone
+        </span>
+        <h3 data-anime="rigth">  (11) 2487-5500</h3>
+      </div>
+      </div>
+      <div class="flex-social" data-anime="rigth">
+        <a href=""><img src="../Assets/f.png" alt="FACE"></a>
+        <a href=""><img src="../Assets/i.png" alt="INSTA"></a>
+        <a href=""><img src="../Assets/e.png" alt="EMAIL"></a>
+        <a href=""><img src="../Assets/l.png" alt="LINKEDIN"></a>
+        <a href=""><img src="../Assets/w.png" alt="WHATSAPP"></a>
+
+
+      </div>
+      <!--FECHAMENTO FLEX SOCIAL-->
+    </section>
+    <!--FECHAMENTO CONTAINER-CONTATO-->
+
+  </main>
+  <footer>
+    <section class="rodapé">
+
+      <p>Copyright © Marvitec. (Lei 9610 de 19/02/1998)</p>
+      <p>Site Desenvolvido por Lucas Biasi dos Anjos,Cesar Andres Puma e Cesar Augusto Estevão de Almeida.</p>
+
+    </section>
+    <!--FECHAMENTO RODAPÉ-->
+
+  </footer>
+  <script src="../JS/script.js">
+
+  </script>
+
+</body>
+
+</html>
